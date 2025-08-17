@@ -1,0 +1,41 @@
+2025-08-17T17:06:42.171-03:00  INFO 4188 --- [login] [restartedMain] com.developer.login.LoginApplication     : Starting LoginApplication using Java 17.0.9 with PID 4188 (C:\Projeto-login\login\target\classes started by GabrielReboucas in C:\Projeto-login\login)
+2025-08-17T17:06:42.174-03:00  INFO 4188 --- [login] [restartedMain] com.developer.login.LoginApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T17:06:42.215-03:00  INFO 4188 --- [login] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-17T17:06:42.216-03:00  INFO 4188 --- [login] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-17T17:06:43.232-03:00  INFO 4188 --- [login] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17T17:06:43.284-03:00  INFO 4188 --- [login] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2025-08-17T17:06:43.788-03:00  INFO 4188 --- [login] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-17T17:06:43.806-03:00  INFO 4188 --- [login] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-17T17:06:43.807-03:00  INFO 4188 --- [login] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-17T17:06:43.855-03:00  INFO 4188 --- [login] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-17T17:06:43.856-03:00  INFO 4188 --- [login] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1640 ms
+2025-08-17T17:06:44.035-03:00  INFO 4188 --- [login] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17T17:06:44.103-03:00  INFO 4188 --- [login] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-17T17:06:44.141-03:00  INFO 4188 --- [login] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-17T17:06:44.408-03:00  INFO 4188 --- [login] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17T17:06:44.444-03:00  INFO 4188 --- [login] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-17T17:06:44.649-03:00  INFO 4188 --- [login] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:banco user=SA
+2025-08-17T17:06:44.652-03:00  INFO 4188 --- [login] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-17T17:06:44.683-03:00  WARN 4188 --- [login] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17T17:06:44.705-03:00  INFO 4188 --- [login] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-17T17:06:45.592-03:00  INFO 4188 --- [login] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17T17:06:45.660-03:00  INFO 4188 --- [login] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T17:06:46.133-03:00  WARN 4188 --- [login] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17T17:06:46.161-03:00  INFO 4188 --- [login] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-17T17:06:46.202-03:00  INFO 4188 --- [login] [restartedMain] c.d.login.security.SecurityConfig        : Configuração de segurança iniciada...
+2025-08-17T17:06:46.483-03:00  INFO 4188 --- [login] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 5 endpoints beneath base path '/actuator'
+2025-08-17T17:06:46.513-03:00  INFO 4188 --- [login] [restartedMain] c.d.login.security.SecurityConfig        : Configuração de segurança carregada com sucesso.
+2025-08-17T17:06:46.775-03:00  INFO 4188 --- [login] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:banco'
+2025-08-17T17:06:46.832-03:00  INFO 4188 --- [login] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-17T17:06:46.902-03:00  INFO 4188 --- [login] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-17T17:06:46.919-03:00  INFO 4188 --- [login] [restartedMain] com.developer.login.LoginApplication     : Started LoginApplication in 5.159 seconds (process running for 5.836)
+2025-08-17T17:06:47.261-03:00  INFO 4188 --- [login] [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-17T17:06:47.262-03:00  INFO 4188 --- [login] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-17T17:06:47.264-03:00  INFO 4188 --- [login] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

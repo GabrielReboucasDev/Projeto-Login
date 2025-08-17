@@ -1,0 +1,59 @@
+spring:
+  application:
+    name: login
+  datasource:
+    url: jdbc:h2:mem:banco
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: teste
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show-sql: true
+
+server:
+  port: 8080
+
+mail:
+  host: smtp.gmail.com
+  port: 587
+  username: gabrielsousareboucas@gmail.com
+  password: 
+  properties:
+    mail:
+      smtp:
+        auth: true
+        starttls:
+          enable: true
+
+jwt:
+  secret: meusegredosecreto
+  access-expiration: 120000 # 3600000
+  refresh-expiration: 300000 # 14400000
+
+logging:
+  file:
+    name: logs/application.log
+  level:
+    root: INFO
+    com.seu.projeto: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics, loggers, env
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
