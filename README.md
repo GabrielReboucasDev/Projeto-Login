@@ -4,7 +4,9 @@
 **Login** é um sistema de autenticação que permite ativação de conta e recuperação de senha via e-mail.
 
 Este projeto foi desenvolvido para aprimorar os conhecimentos em:
-- **Desenvolvimento Fullstack**
+- **Web API Rest**
+- **Autenticação JWT**
+- **Spring Security**
 
 ## Autores
 - **Gabriel Sousa Rebouças Freire**
